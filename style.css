@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --blue: #2A324B;
+    --light-blue: #58699D;
+    --light-grey: #E1E5EE;
+    --white: #fff;
+
+    --font: 'Montserrat';
+
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--light-grey);
+    font-family: var(--font);
+}
+
+#container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    padding: 1rem;
+    width: 100%;
+    max-width: 800px;
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+nav{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    align-items: center;
+    position: absolute;
+    top: -46.5%;
+    left: 50%;
+    transform: translate(-50%, 40%);
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    margin: -0.25rem;
+    padding: 0;
+}
+
+
+nav li{
+    margin-right: 1rem;
+    background-color: var(--blue);
+    margin: auto;
+}
+
+nav a{
+    display: inline-block;
+    margin: 1rem;
+    color: var(--white);
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+nav li:hover{
+    background-color: var(--white);
+    color: var(--blue);
+}
+
+nav a:hover{
+    background-color: var(--white);
+    color: var(--blue);
+}
+
+nav li.active {
+    background-color: var(--white);
+}
+
+nav li.active a {
+    color: var(--blue);
+}
